@@ -16,8 +16,5 @@ public class Application {
         Car carWithConstructor = javaConfigContext.getBean(Car.class);
         CarWithSetterInjection carWithSetter = javaConfigContext.getBean(CarWithSetterInjection.class);
         CarWithFieldInjection carWithField = javaConfigContext.getBean(CarWithFieldInjection.class);
-        carWithConstructor.Ride();
-        carWithSetter.Ride();
-        carWithField.Ride();
     }
 }

@@ -4,6 +4,9 @@ import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Getter
 @Component
 public class CarWithSetterInjection {
@@ -14,7 +17,12 @@ public class CarWithSetterInjection {
         this.wheel = wheel;
     }
 
-    public void Ride(){
-        System.out.println("I`m riding!");
+    @PreDestroy
+    public void onDestroy(){
+        System.out.println("I`m dead :(");
+    }
+    @PostConstruct
+    public void onCreate(){
+        System.out.println("I`m alive!");
     }
 }
