@@ -1,4 +1,4 @@
-package Vehicles;
+package com.example.demo.vehicles;
 
 import lombok.Getter;
 import lombok.Setter;
