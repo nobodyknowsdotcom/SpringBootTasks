@@ -11,10 +11,12 @@ import javax.annotation.PreDestroy;
 @Component
 public class Car{
     private Wheel wheel;
+    private SteeringWheel steeringWheel;
 
     @Autowired
-    public Car(Wheel wheel){
+    public Car(Wheel wheel, SteeringWheel steeringWheel){
         this.wheel = wheel;
+        this.steeringWheel = steeringWheel;
     }
     @PreDestroy
     public void onDestroy(){

@@ -7,10 +7,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.example.demo")
 public class MyApplication {
     public static void main(String[] args) {
         SpringApplication.run(MyApplication.class, args);
@@ -19,6 +17,6 @@ public class MyApplication {
         Car constructorCar = javaConfigContext.getBean(Car.class);
         CarWithFieldInjection fieldCar = javaConfigContext.getBean(CarWithFieldInjection.class);
         constructorCar.getWheel().Roll();
-        fieldCar.getWheel().Roll();
+        constructorCar.getSteeringWheel().Roll();
     }
 }

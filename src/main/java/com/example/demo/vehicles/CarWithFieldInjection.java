@@ -14,6 +14,8 @@ import javax.annotation.PreDestroy;
 public class CarWithFieldInjection{
     @Autowired
     private Wheel wheel;
+    @Autowired
+    private SteeringWheel steeringWheel;
 
     @PreDestroy
     public void onDestroy(){

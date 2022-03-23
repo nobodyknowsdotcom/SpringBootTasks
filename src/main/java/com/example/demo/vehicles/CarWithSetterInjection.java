@@ -11,10 +11,15 @@ import javax.annotation.PreDestroy;
 @Component
 public class CarWithSetterInjection{
     private Wheel wheel;
+    private SteeringWheel steeringWheel;
 
     @Autowired
     public void setWheel(Wheel wheel){
         this.wheel = wheel;
+    }
+    @Autowired
+    public void setSteeringWheel(SteeringWheel steeringWheel){
+        this.steeringWheel = steeringWheel;
     }
 
     @PreDestroy
