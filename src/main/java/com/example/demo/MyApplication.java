@@ -1,3 +1,5 @@
+package com.example.demo;
+
 import com.example.demo.config.Config;
 import com.example.demo.vehicles.Car;
 import com.example.demo.vehicles.CarWithFieldInjection;
