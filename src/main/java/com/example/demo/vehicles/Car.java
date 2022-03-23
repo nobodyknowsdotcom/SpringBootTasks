@@ -9,7 +9,7 @@ import javax.annotation.PreDestroy;
 
 @Getter
 @Component
-public class Car {
+public class Car{
     private Wheel wheel;
 
     @Autowired

@@ -11,7 +11,7 @@ import javax.annotation.PreDestroy;
 @Getter
 @Setter
 @Component
-public class CarWithFieldInjection {
+public class CarWithFieldInjection{
     @Autowired
     private Wheel wheel;
 
