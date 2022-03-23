@@ -6,11 +6,6 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan("com.example.demo")
 public class MyApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-        ApplicationContext javaConfigContext = new AnnotationConfigApplicationContext(Config.class);
-
-        Car carWithConstructor = javaConfigContext.getBean(Car.class);
-        CarWithSetterInjection carWithSetter = javaConfigContext.getBean(CarWithSetterInjection.class);
-        CarWithFieldInjection carWithField = javaConfigContext.getBean(CarWithFieldInjection.class);
+        SpringApplication.run(MyApplication.class, args);
     }
 }
