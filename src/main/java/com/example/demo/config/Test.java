@@ -10,14 +10,14 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 @Profile("test")
 public class Test {
-    @Value("${test.app.name}")
+    @Value("${test.app.name:defaultname}")
     private String appName;
-    @Value("${spring.profiles.active}")
+    @Value("${spring.profiles.active:defaultprofile}")
     private String configName;
-    @Value("${test.wheel.size}")
-    private Integer wheelSize;
-    @Value("${test.steeringwheel.size}")
-    private Integer steeringWheelSize;
+    @Value("${test.wheel.size:0}")
+    private int wheelSize;
+    @Value("${test.steeringwheel.size:0}")
+    private int steeringWheelSize;
 
     @Bean
     public Wheel wheel(){

@@ -10,14 +10,14 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 @Profile("prod")
 public class Prod {
-    @Value("${prod.app.name}")
+    @Value("${prod.app.name:defaultname}")
     private String appName;
-    @Value("${spring.profiles.active}")
+    @Value("${spring.profiles.active:defaultprofile}")
     private String configName;
-    @Value("${prod.wheel.size}")
-    private Integer wheelSize;
-    @Value("${prod.steeringwheel.size}")
-    private Integer steeringWheelSize;
+    @Value("${prod.wheel.size:0}")
+    private int wheelSize;
+    @Value("${prod.steeringwheel.size:0}")
+    private int steeringWheelSize;
 
     @Bean
     public Wheel wheel(){
