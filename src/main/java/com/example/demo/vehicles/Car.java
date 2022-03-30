@@ -10,12 +10,12 @@ import javax.annotation.PreDestroy;
 @Getter
 @Component
 public class Car{
-    private IRollable wheel2;
-    private IRollable steeringWheel2;
+    private final IRollable wheels;
+    private final IRollable steeringWheel2;
 
     @Autowired
     public Car(@Qualifier("wheel") IRollable wheel, @Qualifier("steeringWheel") IRollable steeringWheel){
-        this.wheel2 = wheel;
+        this.wheels = wheel;
         this.steeringWheel2 = steeringWheel;
     }
     @PreDestroy
@@ -28,7 +28,15 @@ public class Car{
     }
 
     public void Work(){
-        wheel2.Roll();
+        wheels.Roll();
         steeringWheel2.Roll();
+    }
+
+    public int getWheelsSize(){
+        return ((Wheel) this.wheels).getSize();
+    }
+
+    public int getSteeringWheelSize(){
+        return ((SteeringWheel) this.steeringWheel2).getSize();
     }
 }
