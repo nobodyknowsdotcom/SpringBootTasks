@@ -3,6 +3,7 @@ package com.example.demo.config;
 import com.example.demo.vehicles.SteeringWheel;
 import com.example.demo.vehicles.Wheel;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
@@ -10,9 +11,9 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 @Profile("dev")
 public class Dev {
-    @Value("${dev.app.name:defaultname}")
+    @Value("${dev.app.name:default}")
     private String appName;
-    @Value("${spring.profiles.active:defaultconfig}")
+    @Value("${spring.profiles.active:default config}")
     private String configName;
     @Value("${dev.wheel.size:0}")
     private int wheelSize;
@@ -24,7 +25,7 @@ public class Dev {
         return new Wheel(wheelSize){
             @Override
             public void Roll() {
-                System.out.println("Wheels are spinning awful!");
+                System.out.println("Wheels are spinning crappy.");
             }
         };
     }
@@ -36,6 +37,11 @@ public class Dev {
                 System.out.println("Steering wheel is spinning not bad.");
             }
         };
+    }
+    @Bean
+    @ConditionalOnExpression("!('${spring.profiles.active}'=='{default}')")
+    public String isNotDefault(){
+        return "This is not default config!";
     }
     @Bean String appName(){
         return appName;
