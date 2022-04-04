@@ -5,10 +5,11 @@ import lombok.Getter;
 import org.springframework.stereotype.Component;
 
 @Component
-@AllArgsConstructor
 @Getter
-public class SteeringWheel implements IRollable{
-    private int size;
+public class SteeringWheel extends Rollable{
+    public SteeringWheel(int size){
+        super(size);
+    }
     @Override
     public void Roll() {
         System.out.println("Steering wheel is rolling.");
