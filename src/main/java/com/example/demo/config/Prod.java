@@ -43,10 +43,8 @@ public class Prod {
     public String isNotDefault(){
         return "This is not default config!";
     }
-    @Bean String appName(){
-        return appName;
-    }
-    @Bean String configName(){
-        return configName;
+    @Bean
+    public ConfigInfo configInfo(){
+        return new ConfigInfo(configName, appName);
     }
 }
