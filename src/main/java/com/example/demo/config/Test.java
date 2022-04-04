@@ -26,7 +26,7 @@ public class Test {
     public Wheel testWheel(){
         return new Wheel(wheelSize){
             @Override
-            public void Roll() {
+            public void roll() {
                 System.out.println("Wheels are in the test mode.");
             }
         };
@@ -35,7 +35,7 @@ public class Test {
     public Wheel wheel(){
         return new Wheel(wheelSize){
             @Override
-            public void Roll() {
+            public void roll() {
                 System.out.println("Wheels are in the test mode.");
             }
         };
@@ -45,13 +45,13 @@ public class Test {
     public SteeringWheel steeringWheel(){
         return new SteeringWheel(steeringWheelSize){
             @Override
-            public void Roll(){
+            public void roll(){
                 System.out.println("Steering wheel is in the testing mode.");
             }
         };
     }
     @Bean
-    @ConditionalOnExpression("!('${spring.profiles.active}'=='{default}')")
+    @ConditionalOnExpression("'${spring.profiles.active}'!='{default}'")
     public String isNotDefault(){
         return "This is not default config!";
     }

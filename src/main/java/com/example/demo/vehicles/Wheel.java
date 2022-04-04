@@ -10,8 +10,4 @@ public class Wheel extends Rollable{
     public Wheel(int size){
         super(size);
     }
-    @Override
-    public void Roll(){
-        System.out.println("Wheels are rolling.");
-    }
 }

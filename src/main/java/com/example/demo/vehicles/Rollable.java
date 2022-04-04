@@ -10,7 +10,7 @@ public abstract class Rollable {
         this.size = size;
     }
 
-    public void Roll(){
+    public void roll(){
         System.out.println("i'm rolling!");
     }
 }

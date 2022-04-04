@@ -10,10 +10,10 @@ public class MyApplication{
     public static void main(String[] args) {
         var applicationContext = SpringApplication.run(MyApplication.class, args);
         Car myCar = applicationContext.getBean(Car.class);
-        System.out.printf("Running %s\n---------------\n", applicationContext.getBean("appName"));
+        System.out.printf("Running %s\n", applicationContext.getBean("appName"));
         System.out.printf("Wheels size is %s\n", myCar.getWheelsSize());
         System.out.printf("Steering wheel size is %s\n", myCar.getSteeringWheelSize());
         System.out.println(applicationContext.getBean("isNotDefault"));
-        myCar.Work();
+        myCar.work();
     }
 }

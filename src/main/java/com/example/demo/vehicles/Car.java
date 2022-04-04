@@ -27,9 +27,9 @@ public class Car{
         System.out.println("I`m alive!");
     }
 
-    public void Work(){
-        wheels.Roll();
-        steeringWheel.Roll();
+    public void work(){
+        wheels.roll();
+        steeringWheel.roll();
     }
 
     public int getWheelsSize(){

@@ -24,7 +24,7 @@ public class Prod {
     public Wheel wheel(){
         return new Wheel(wheelSize){
             @Override
-            public void Roll(){
+            public void roll(){
                 System.out.println("Wheels are spinning greatly!");
             }
         };
@@ -33,7 +33,7 @@ public class Prod {
     public SteeringWheel steeringWheel(){
         return new SteeringWheel(steeringWheelSize){
             @Override
-            public void Roll(){
+            public void roll(){
                 System.out.println("Steering wheel is spinning very cool!");
             }
         };
