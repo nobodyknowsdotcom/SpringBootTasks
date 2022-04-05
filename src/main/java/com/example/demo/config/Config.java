@@ -22,7 +22,6 @@ public class Config {
     private int steeringWheelSize;
 
     @Bean
-    @Profile({"dev", "prod", "test", "default"})
     public Wheel wheel(){
         return new Wheel(wheelSize){
             @Override
@@ -32,7 +31,6 @@ public class Config {
         };
     }
     @Bean
-    @Profile({"dev", "prod", "test", "default"})
     public SteeringWheel steeringWheel(){
         return new SteeringWheel(steeringWheelSize){
             @Override
@@ -41,25 +39,25 @@ public class Config {
             }
         };
     }
+    @Profile("test")
     @Bean
-    @Profile({"dev", "prod", "test", "default"})
     public ConfigInfo configInfo(){
         return new ConfigInfo(configName, appName);
     }
     @Bean
-    @Profile("test")
-    public String testString(){
-        return "First test string is born!";
-    }
-    @Bean
     @Profile({"test"})
-    @ConditionalOnBean(String.class)
-    public String secondTestString(){
-        return "Second test string is born!";
+    @ConditionalOnBean(ConfigInfo.class)
+    public Wheel testWheel(){
+        return new Wheel(wheelSize*3){
+            @Override
+            public void roll() {
+                System.out.println("Wheels are rolling.");
+            }
+        };
     }
     @Bean
     @ConditionalOnExpression("!'${spring.profiles.active}'.equals('default')")
     public String isNotDefault(){
-        return "This is not default config!";
+        return "This is not default config.";
     }
 }

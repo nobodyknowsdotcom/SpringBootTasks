@@ -11,17 +11,15 @@ public class MyApplication{
     public static void main(String[] args) {
         var applicationContext = SpringApplication.run(MyApplication.class, args);
         Car myCar = applicationContext.getBean(Car.class);
-        ConfigInfo config = applicationContext.getBean(ConfigInfo.class);
-        System.out.println(config);
         System.out.printf("Wheels size is %s\n", myCar.getWheelsSize());
         System.out.printf("Steering wheel size is %s\n", myCar.getSteeringWheelSize());
         myCar.work();
 
         try {
-            System.out.println(applicationContext.getBean("testString"));
-            System.out.println(applicationContext.getBean("secondTestString"));
+            System.out.println(applicationContext.getBean("configInfo"));
+            System.out.println(applicationContext.getBean("testWheel"));
         } catch (NoSuchBeanDefinitionException e) {
-            System.out.println("Test Bean not found!");
+            System.out.println("This is not test config.");
         }
 
         try {
