@@ -18,6 +18,7 @@ import org.springframework.context.annotation.Profile;
 public class Config {
     private String appName;
     private String configName;
+    private String envVariable;
     private int wheelSize;
     private int steeringWheelSize;
 
