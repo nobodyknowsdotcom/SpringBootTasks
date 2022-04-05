@@ -10,11 +10,11 @@ import javax.annotation.PreDestroy;
 @Getter
 @Component
 public class Car{
-    private final Wheel wheels;
-    private final SteeringWheel steeringWheel;
+    private final Rollable wheels;
+    private final Rollable steeringWheel;
 
     @Autowired
-    public Car(@Qualifier("wheel") Wheel wheel, @Qualifier("steeringWheel") SteeringWheel steeringWheel){
+    public Car(@Qualifier("wheel") Rollable wheel, @Qualifier("steeringWheel") Rollable steeringWheel){
         this.wheels = wheel;
         this.steeringWheel = steeringWheel;
     }
