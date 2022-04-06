@@ -46,7 +46,6 @@ public class Config {
         return new ConfigInfo(configName, appName);
     }
     @Bean
-    @Profile({"test"})
     @ConditionalOnBean(ConfigInfo.class)
     public Wheel testWheel(){
         return new Wheel(wheelSize*3){
@@ -57,8 +56,8 @@ public class Config {
         };
     }
     @Bean
-    @ConditionalOnExpression("!'${spring.profiles.active}'.equals('default')")
+    @ConditionalOnExpression("!'${my.envVariable}'.equals('default')")
     public String isNotDefault(){
-        return "This is not default config.";
+        return "my.envVariable is default now.";
     }
 }
