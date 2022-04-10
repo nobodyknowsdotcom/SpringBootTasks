@@ -16,6 +16,6 @@ public class TransactionalListener {
     @EventListener(MyEvent.class)
     @TransactionalEventListener(phase = TransactionPhase.BEFORE_COMMIT)
     public void handleCustom(MyEvent event) {
-        System.out.println("Received spring custom event - " + event.getMessage() + " 'Transactional'");
+        System.out.println("Received spring custom event " + event.getMessage() + " with code "+Integer.parseInt(event.getCode())+" 'Transactional'");
     }
 }

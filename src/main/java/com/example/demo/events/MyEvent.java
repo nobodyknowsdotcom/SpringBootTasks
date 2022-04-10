@@ -6,11 +6,11 @@ import org.springframework.context.ApplicationEvent;
 @Getter
 public class MyEvent extends ApplicationEvent {
     private final String message;
-    private final Throwable exception;
+    private final String code;
 
-    public MyEvent(Object source, String message, Throwable exception) {
+    public MyEvent(Object source, String message, String code) {
         super(source);
         this.message = message;
-        this.exception = exception;
+        this.code = code;
     }
 }

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Component
-@Transactional
+@Transactional(rollbackFor=Exception.class)
 @Service
 public class EventPublisher {
     private final ApplicationEventPublisher applicationEventPublisher;
@@ -16,9 +16,14 @@ public class EventPublisher {
         this.applicationEventPublisher = applicationEventPublisher;
     }
 
-    public void publishCustomEvent(final String message, Throwable exception) {
-        System.out.println("Publishing custom event. ");
-        MyEvent customSpringEvent = new MyEvent(this, message, exception);
-        applicationEventPublisher.publishEvent(customSpringEvent);
+    public void publishCustomEvent(final String message, String code) {
+        System.out.println("Publishing custom event");
+        MyEvent customSpringEvent = new MyEvent(this, message, code);
+        try{
+            applicationEventPublisher.publishEvent(customSpringEvent);
+        } catch (Exception e){
+            System.out.println("Exception caught, rolling back");
+        }
+
     }
 }
