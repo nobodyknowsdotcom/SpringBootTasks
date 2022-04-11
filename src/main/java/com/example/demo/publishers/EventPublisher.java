@@ -1,14 +1,14 @@
 package com.example.demo.publishers;
 
 import com.example.demo.events.MyEvent;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-@Component
-@Transactional(rollbackFor=Exception.class)
+@Slf4j
 @Service
+@Transactional(rollbackFor=Exception.class)
 public class EventPublisher {
     private final ApplicationEventPublisher applicationEventPublisher;
 
@@ -17,12 +17,12 @@ public class EventPublisher {
     }
 
     public void publishCustomEvent(final String message, String code) {
-        System.out.println("Publishing custom event");
+        log.info("Publishing custom event");
         MyEvent customSpringEvent = new MyEvent(this, message, code);
         try{
             applicationEventPublisher.publishEvent(customSpringEvent);
         } catch (Exception e){
-            System.out.println("Exception caught, rolling back");
+            log.info("Exception caught, rolling back");
         }
 
     }
