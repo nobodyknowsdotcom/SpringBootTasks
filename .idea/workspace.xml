@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="143f8ca1-3521-4ba6-a9f6-79c0ae326329" name="Changes" comment="Create and fill id on /addid">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Advice.java" afterDir="false" />
+    <list default="true" id="143f8ca1-3521-4ba6-a9f6-79c0ae326329" name="Changes" comment="Return headers on /getheaders">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Advice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Advice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -73,30 +73,7 @@
       <workItem from="1649964994813" duration="385000" />
       <workItem from="1650013253467" duration="7825000" />
       <workItem from="1650054136291" duration="61000" />
-      <workItem from="1650125102919" duration="4638000" />
     </task>
-    <task id="LOCAL-00001" summary="Read nested JSON elements">
-      <created>1650099233048</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1650099233048</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Read nested JSON elements">
-      <created>1650099260023</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1650099260023</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Create and fill id on /addid">
-      <created>1650139411118</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1650139411118</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,10 +90,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Read nested JSON elements" />
-    <MESSAGE value="Create and fill id on /addid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create and fill id on /addid" />
   </component>
 </project>

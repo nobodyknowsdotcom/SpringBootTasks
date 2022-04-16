@@ -15,6 +15,6 @@ public class Advice extends ResponseEntityExceptionHandler {
             RuntimeException ex, WebRequest request) {
         String bodyOfResponse = "It looks like you passed the wrong json to the input.";
         return handleExceptionInternal(ex, bodyOfResponse,
-                new HttpHeaders(), HttpStatus.CONFLICT, request);
+                new HttpHeaders(), HttpStatus.BAD_GATEWAY, request);
     }
 }
