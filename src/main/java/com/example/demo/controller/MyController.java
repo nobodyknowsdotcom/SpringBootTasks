@@ -28,10 +28,11 @@ public class MyController {
     }
 
     @GetMapping("/addid")
-    public ResponseEntity<String> myGreeting(@RequestBody String input) throws JsonProcessingException {
+    public ResponseEntity<JsonNode> myGreeting(@RequestBody String input) throws JsonProcessingException {
         JsonNode rootNode = mapper.readTree(input);
-        ((ObjectNode) rootNode).put("id", getRandomNumber(0, Integer.MAX_VALUE));
-        return new ResponseEntity<>(rootNode.toString(), HttpStatus.OK);
+        var locatedNode = rootNode.path("info");
+        ((ObjectNode) locatedNode).put("id", getRandomNumber(0, Integer.MAX_VALUE));
+        return new ResponseEntity<>(rootNode, HttpStatus.OK);
     }
 
     public int getRandomNumber(int min, int max) {
