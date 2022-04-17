@@ -9,8 +9,8 @@ import org.springframework.transaction.event.TransactionalEventListener;
 @Slf4j
 @Component
 public class TransactionalListener {
-    @TransactionalEventListener(phase = TransactionPhase.AFTER_ROLLBACK)
-    public void handleCustom(MyEvent event) {
-        log.info("Received spring custom event " + event.getMessage() + " with code "+Integer.parseInt(event.getCode())+" 'Transactional'");
+    @TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
+    public void handleCustom(MyEvent event){
+        log.info("Received spring custom event - " + event.getMessage() + " 'Transactional'");
     }
 }

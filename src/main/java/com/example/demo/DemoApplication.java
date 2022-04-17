@@ -6,12 +6,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DemoApplication {
+	public static EventPublisher eventPublisher;
 
-	public static void main(String[] args) {
-		var applicationContext = SpringApplication.run(DemoApplication.class, args);
-		var eventPublisher = applicationContext.getBean(EventPublisher.class);
-		eventPublisher.publishCustomEvent("Event with correct code", "100");
-		eventPublisher.publishCustomEvent("Event with incorrect code", "not a code");
+	public DemoApplication(EventPublisher eventPublisher) {
+		this.eventPublisher = eventPublisher;
 	}
 
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+		eventPublisher.publishCustomEvent("Correct event");
+		eventPublisher.publishErrorEvent("IllegalArgumentException event");
+	}
 }

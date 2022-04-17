@@ -8,22 +8,23 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Slf4j
 @Service
-@Transactional(rollbackFor=Exception.class)
 public class EventPublisher {
     private final ApplicationEventPublisher applicationEventPublisher;
 
     public EventPublisher(ApplicationEventPublisher applicationEventPublisher) {
         this.applicationEventPublisher = applicationEventPublisher;
     }
-
-    public void publishCustomEvent(final String message, String code) {
+    @Transactional
+    public void publishCustomEvent(final String message) {
         log.info("Publishing custom event");
-        MyEvent customSpringEvent = new MyEvent(this, message, code);
-        try{
-            applicationEventPublisher.publishEvent(customSpringEvent);
-        } catch (Exception e){
-            log.info("Exception caught, rolling back");
-        }
-
+        MyEvent customSpringEvent = new MyEvent(this, message);
+        applicationEventPublisher.publishEvent(customSpringEvent);
+    }
+    @Transactional
+    public void publishErrorEvent(final String message) {
+        log.info("Publishing error event");
+        MyEvent customSpringEvent = new MyEvent(this, message);
+        applicationEventPublisher.publishEvent(customSpringEvent);
+        throw new RuntimeException();
     }
 }

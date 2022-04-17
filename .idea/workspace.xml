@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b89dd011-c217-4c04-8010-108201e869ca" name="Changes" comment="Add gitignore">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/config/MyConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/config/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/events/MyEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/events/MyEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/listeners/AsyncListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/listeners/AsyncListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/listeners/SyncListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/listeners/SyncListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/listeners/TransactionalListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/listeners/TransactionalListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/publishers/EventPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/publishers/EventPublisher.java" afterDir="false" />
     </list>
@@ -28,6 +30,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectId" id="27PlVpKHB6m2jQPSKN9KjMTffo7" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -46,6 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
@@ -60,7 +75,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="mavenExample" />
       <extension name="coverage">
@@ -74,7 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
       <method v="2">
@@ -83,6 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoApplication" />
         <item itemvalue="Spring Boot.DemoApplication (1)" />
       </list>
     </recent_temporary>
@@ -100,6 +116,11 @@
       <workItem from="1649239690457" duration="2998000" />
       <workItem from="1649248369050" duration="2341000" />
       <workItem from="1649624357721" duration="349000" />
+      <workItem from="1650199735667" duration="98000" />
+      <workItem from="1650200004363" duration="6549000" />
+      <workItem from="1650206904559" duration="2265000" />
+      <workItem from="1650209408228" duration="3770000" />
+      <workItem from="1650214477701" duration="484000" />
     </task>
     <task id="LOCAL-00001" summary="Create tasks template">
       <created>1649229773060</created>
