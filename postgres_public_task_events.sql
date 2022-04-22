@@ -1,0 +1,11 @@
+UPDATE public.task_events SET task_id = 19, event = 'delo4';
+UPDATE public.task_events SET task_id = 19, event = 'delo5';
+UPDATE public.task_events SET task_id = 20, event = 'дело1';
+UPDATE public.task_events SET task_id = 20, event = 'delo2';
+UPDATE public.task_events SET task_id = 20, event = 'delo3';
+UPDATE public.task_events SET task_id = 21, event = 'дело1';
+UPDATE public.task_events SET task_id = 21, event = 'delo2';
+UPDATE public.task_events SET task_id = 21, event = 'delo3';
+UPDATE public.task_events SET task_id = 22, event = 'дело1';
+UPDATE public.task_events SET task_id = 22, event = 'delo2';
+UPDATE public.task_events SET task_id = 22, event = 'delo3';

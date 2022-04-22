@@ -1,12 +1,10 @@
 package com.example.demo.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Entity
 @Table(name = "Tasks")
@@ -14,11 +12,18 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 @Getter
 @Setter
+@ToString
 public class Task {
     @Id
-    private int id;
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @NotNull
+    private Long id;
+    @Column(name = "name")
     @NotNull
     private String name;
+    @Column(name = "event")
+    @ElementCollection
     @NotNull
-    private String events;
+    private List<String> events;
 }
