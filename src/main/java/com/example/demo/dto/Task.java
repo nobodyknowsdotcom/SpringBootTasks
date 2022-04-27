@@ -3,7 +3,9 @@ package com.example.demo.dto;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @Entity
@@ -20,10 +22,10 @@ public class Task {
     @NotNull
     private Long id;
     @Column(name = "name")
-    @NotNull
+    @NotEmpty
     private String name;
     @Column(name = "event")
     @ElementCollection
-    @NotNull
+    @Size(min = 1, max = 5)
     private List<String> events;
 }
