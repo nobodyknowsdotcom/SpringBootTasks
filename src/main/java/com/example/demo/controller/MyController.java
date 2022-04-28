@@ -6,7 +6,6 @@ import com.example.demo.repository.TaskRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
@@ -19,13 +18,11 @@ public class MyController {
     }
 
     @RequestMapping(path="/add", method=RequestMethod.POST)
-    @ResponseStatus(HttpStatus.ACCEPTED)
     public String readTask(@RequestBody Task task) {
         repo.save(task);
         return String.valueOf(repo.count());
     }
     @RequestMapping(path="/get", method=RequestMethod.GET)
-    @ResponseStatus(HttpStatus.ACCEPTED)
     public String returnAllTasks(){
         ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
         var tasks = new ArrayList<String>();
@@ -37,7 +34,12 @@ public class MyController {
                 e.printStackTrace();
             }
         });
-        var json = String.join("\n", tasks);
-        return json;
+        return String.join("\n", tasks);
     }
+    @RequestMapping(path="/clear", method=RequestMethod.DELETE)
+    public String clearTasks(){
+        repo.deleteAll();
+        return "Tasks are deleted successfully.";
+    }
+
 }
