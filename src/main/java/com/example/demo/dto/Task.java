@@ -1,11 +1,10 @@
 package com.example.demo.dto;
 
 import lombok.*;
+import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.util.List;
 
 @Entity
@@ -19,10 +18,9 @@ public class Task {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @NotNull
     private Long id;
     @Column(name = "name")
-    @NotEmpty
+    @Length(min = 1, max = 50)
     private String name;
     @Column(name = "event")
     @ElementCollection

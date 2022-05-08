@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="143f8ca1-3521-4ba6-a9f6-79c0ae326329" name="Changes" comment="Add /get controller, who is returns all recordings of tasks table">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/TaskDto.java" afterDir="false" />
+    <list default="true" id="143f8ca1-3521-4ba6-a9f6-79c0ae326329" name="Changes" comment="GetDTO in controller instead of String">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/RepositoryTools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/MyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/TaskRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +107,8 @@
       <workItem from="1650627898064" duration="1400000" />
       <workItem from="1650656151625" duration="140000" />
       <workItem from="1650656371216" duration="7815000" />
+      <workItem from="1652013443568" duration="1622000" />
+      <workItem from="1652017970644" duration="830000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1650637826607</created>
