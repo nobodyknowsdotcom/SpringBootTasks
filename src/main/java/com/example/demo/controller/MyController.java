@@ -1,8 +1,8 @@
 package com.example.demo.controller;
 
+import com.example.demo.annotations.WithRestrictedQuota;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -10,8 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @Service
 public class MyController {
 
-    @RequestMapping(path="/dosomething", method=RequestMethod.GET)
-    public String readTask() {
+    @WithRestrictedQuota
+    @GetMapping(path="/dosomething")
+    public String apiRequest() {
         return "Api did something.";
     }
 

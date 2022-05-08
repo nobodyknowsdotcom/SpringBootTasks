@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a1645a9-0e35-4826-b29b-e9f3d3385708" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/advices/QuotaAdvice.java" afterDir="false" />
+    <list default="true" id="0a1645a9-0e35-4826-b29b-e9f3d3385708" name="Changes" comment="Remove @ResponseStatus&#10;Add /clear controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/annotations/WithRestrictedQuota.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/advices/QuotaAdvice.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/aspects/MyAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/aspects/MyAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/MyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +22,7 @@
       <list>
         <option value="HTML File" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -76,6 +79,9 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.demo.controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nobodyknowsdotcom\IdeaProjects\SpringBootTasks" />
     </key>
@@ -117,7 +123,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="143f8ca1-3521-4ba6-a9f6-79c0ae326329" name="Changes" comment="" />
+      <changelist id="0a1645a9-0e35-4826-b29b-e9f3d3385708" name="Changes" comment="Remove @ResponseStatus&#10;Add /clear controller" />
       <created>1649964991751</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -137,6 +143,7 @@
       <workItem from="1651152209520" duration="1647000" />
       <workItem from="1651435102811" duration="2839000" />
       <workItem from="1651481510886" duration="50000" />
+      <workItem from="1652039740759" duration="1557000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1650637826607</created>
