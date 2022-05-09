@@ -1,14 +1,10 @@
 package com.example.demo.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class TaskDto {
     private String name;
     private List<String> events;
@@ -19,5 +15,13 @@ public class TaskDto {
         dto.setEvents(task.getEvents());
 
         return dto;
+    }
+
+    public Task toEntity(){
+        Task taskEntity = new Task();
+        taskEntity.setName(this.getName());
+        taskEntity.setEvents(this.getEvents());
+
+        return taskEntity;
     }
 }

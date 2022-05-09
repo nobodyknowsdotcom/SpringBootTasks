@@ -1,12 +1,8 @@
 package com.example.demo.controller;
 
-import com.example.demo.dto.Task;
 import com.example.demo.dto.TaskDto;
 import com.example.demo.repository.RepositoryTools;
 import com.example.demo.repository.TaskRepository;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -20,18 +16,18 @@ public class MyController {
         this.repo = repo;
     }
 
-    @RequestMapping(path="/add", method=RequestMethod.POST)
-    public String readTask(@Valid @RequestBody Task task) {
-        repo.save(task);
+    @PostMapping(path="/add")
+    public String readTask(@Valid @RequestBody TaskDto task) {
+        repo.save(task.toEntity());
         return String.format("Added task with name '%s'.", task.getName());
     }
 
-    @RequestMapping(path="/get", method=RequestMethod.GET)
-    public ArrayList<String> returnAllTasks(){
-        return RepositoryTools.GetAllTasks(repo);
+    @GetMapping(path="/get")
+    public ArrayList<TaskDto> returnAllTasks(){
+        return RepositoryTools.getAllTasks(repo);
     }
 
-    @RequestMapping(path="/clear", method=RequestMethod.DELETE)
+    @DeleteMapping(path="/clear")
     public String clearTasks(){
         repo.deleteAll();
         return "Tasks are deleted successfully.";
