@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="143f8ca1-3521-4ba6-a9f6-79c0ae326329" name="Changes" comment="GetDTO in controller instead of String">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/RepositoryTools.java" afterDir="false" />
+    <list default="true" id="143f8ca1-3521-4ba6-a9f6-79c0ae326329" name="Changes" comment="Use TaskDto in controller&#10;Update readme, add proofs of working validation">
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/MyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/TaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/TaskDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +74,7 @@
     <property name="database.data.extractors.current.export.id" value="SQL Updates" />
     <property name="database.data.extractors.current.id" value="SQL Updates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
@@ -109,6 +112,8 @@
       <workItem from="1650656371216" duration="7815000" />
       <workItem from="1652013443568" duration="1622000" />
       <workItem from="1652017970644" duration="830000" />
+      <workItem from="1652127310148" duration="2499000" />
+      <workItem from="1652172891586" duration="452000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1650637826607</created>
@@ -117,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650637826607</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Use TaskDto in controller&#10;Update readme, add proofs of working validation">
+      <created>1652114943936</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652114943936</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +150,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add /get controller, who is returns all recordings of tasks table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add /get controller, who is returns all recordings of tasks table" />
+    <MESSAGE value="Use TaskDto in controller&#10;Update readme, add proofs of working validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use TaskDto in controller&#10;Update readme, add proofs of working validation" />
   </component>
 </project>

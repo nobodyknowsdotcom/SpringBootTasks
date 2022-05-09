@@ -1,16 +1,18 @@
 package com.example.demo.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.Length;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class TaskDto {
+    @Length(min = 1, max = 50)
+    @NotBlank
     private String name;
+    @Size(min = 1, max = 5)
     private List<String> events;
 
     public static TaskDto fromEntity(Task task){
@@ -19,5 +21,13 @@ public class TaskDto {
         dto.setEvents(task.getEvents());
 
         return dto;
+    }
+
+    public Task toEntity(){
+        Task taskEntity = new Task();
+        taskEntity.setName(this.getName());
+        taskEntity.setEvents(this.getEvents());
+
+        return taskEntity;
     }
 }
