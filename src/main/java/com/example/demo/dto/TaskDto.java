@@ -13,7 +13,7 @@ public class TaskDto {
     @NotBlank
     private String name;
     @Size(min = 1, max = 5)
-    private List<String> events;
+    private List<@NotBlank @Length(min = 1, max = 50) String> events;
 
     public static TaskDto fromEntity(Task task){
         TaskDto dto = new TaskDto();

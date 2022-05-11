@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="143f8ca1-3521-4ba6-a9f6-79c0ae326329" name="Changes" comment="Use TaskDto in controller&#10;Update readme, add proofs of working validation">
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/TaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/TaskDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_2.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +23,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -114,6 +109,7 @@
       <workItem from="1652017970644" duration="830000" />
       <workItem from="1652127310148" duration="2499000" />
       <workItem from="1652172891586" duration="452000" />
+      <workItem from="1652274339484" duration="212000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1650637826607</created>
