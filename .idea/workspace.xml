@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a1645a9-0e35-4826-b29b-e9f3d3385708" name="Changes" comment="Remove @ResponseStatus&#10;Add /clear controller">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/annotations/WithRestrictedQuota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/advices/QuotaAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/aspects/MyAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/aspects/MyAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/MyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651153423508</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Complete 10th homework">
+      <created>1652874891474</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652874891474</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +207,7 @@
     <MESSAGE value="fix database port" />
     <MESSAGE value="Use validation" />
     <MESSAGE value="Remove @ResponseStatus&#10;Add /clear controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove @ResponseStatus&#10;Add /clear controller" />
+    <MESSAGE value="Complete 10th homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete 10th homework" />
   </component>
 </project>
