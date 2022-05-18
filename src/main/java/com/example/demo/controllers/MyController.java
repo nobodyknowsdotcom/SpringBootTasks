@@ -17,23 +17,23 @@ public class MyController {
 
     @GetMapping("/admin/api")
     public String getAdminPage(Authentication auth){
-        var role = auth.getAuthorities().stream()
-                .map(GrantedAuthority::getAuthority)
-                .collect(Collectors.toList())
-                .get(0)
-                .split("_")[1];
+        var role = getRole(auth);
         var name = auth.getName();
         return String.format("Hello, %s!\nYour roles: %s", role, name);
     }
 
     @GetMapping("/support/api")
     public String getSupportPage(Authentication auth){
-        var role = auth.getAuthorities().stream()
+        var role = getRole(auth);
+        var name = auth.getName();
+        return String.format("Hello, %s!\nYour roles: %s", role, name);
+    }
+
+    private String getRole(Authentication auth) {
+        return auth.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority)
                 .collect(Collectors.toList())
                 .get(0)
                 .split("_")[1];
-        var name = auth.getName();
-        return String.format("Hello, %s!\nYour roles: %s", role, name);
     }
 }
