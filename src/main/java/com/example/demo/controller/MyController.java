@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import io.micrometer.core.annotation.Timed;
 import io.micrometer.core.instrument.Counter;
+import io.micrometer.core.instrument.Gauge;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
