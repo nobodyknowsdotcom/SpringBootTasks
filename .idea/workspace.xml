@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="143f8ca1-3521-4ba6-a9f6-79c0ae326329" name="Changes" comment="InitialCommit">
+    <list default="true" id="143f8ca1-3521-4ba6-a9f6-79c0ae326329" name="Changes" comment="Use default by spring actuator">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/aop/MyAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/MyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/Info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/MyDto.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +67,6 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RunManager">
@@ -86,7 +89,16 @@
       <workItem from="1649964994813" duration="385000" />
       <workItem from="1650013253467" duration="7825000" />
       <workItem from="1650054136291" duration="61000" />
+      <workItem from="1652964594151" duration="2677000" />
     </task>
+    <task id="LOCAL-00001" summary="Use default by spring actuator">
+      <created>1652959247685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652959247685</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="InitialCommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="InitialCommit" />
+    <MESSAGE value="Use default by spring actuator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use default by spring actuator" />
   </component>
 </project>
